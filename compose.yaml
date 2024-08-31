@@ -1,0 +1,39 @@
+version: '3.9'
+services:
+  web:
+    container_name: fronted-app
+    restart: always
+    image: marlonut/fronted-app:latest
+    environment:
+      NODE_ENV: production
+    depends_on:
+      - server
+    ports:
+      - 4200:4200
+    networks:
+       - app-fullstack
+  server:
+    container_name: backend-app
+    restart: always
+    image: marlonut/backend-app:latest
+    environment:
+      NODE_ENV: production
+      PORT: 5000
+    ports:
+      - 5000:5000
+    networks:
+      - app-fullstack
+  nginx:
+    container_name: load-balancer
+    restart: always
+    image: marlonut/load-balancer:latest
+    depends_on:
+      - server
+      - web
+    ports:
+       - 8080:80
+    networks:
+      - app-fullstack
+  
+networks:
+  app-fullstack:

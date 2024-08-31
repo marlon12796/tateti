@@ -1,0 +1,7 @@
+[submodule "tateti-fronted"]
+	path = tateti-fronted
+	url = https://github.com/marlon12796/tateti-fronted.git
+
+[submodule "tateti-backend"]
+	path = tateti-backend
+	url = https://github.com/marlon12796/tateti-backend.git
