@@ -71,4 +71,4 @@ Este proyecto está licenciado bajo la [MIT License](LICENSE).
 
 ## Contacto
 
-Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarme a través de [tu email](mailto:fabrisio021@gmail.com).
+Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarme a través de [Mi correo](mailto:fabrisio021@gmail.com).
